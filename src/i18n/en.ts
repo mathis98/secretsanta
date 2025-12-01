@@ -16,7 +16,7 @@ export const en = {
     line: "Line {{number}}"
   },
   home: {
-    vanity: "Project started in winter 2015 by Maël",
+    vanity: "Project modified by Mathis",
     sponsor: "Support me on GitHub",
     title: "Secret Santa Planner",
     explanation: [

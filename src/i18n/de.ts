@@ -16,7 +16,7 @@ export const de = {
     line: "Zeil {{number}}"
   },
   home: {
-    vanity: "Code eigens von Mathis zugeschnitten",
+    vanity: "Code eigens von Mathis angepasst",
     sponsor: "",
     title: "Wichtelhelfer",
     explanation: [
