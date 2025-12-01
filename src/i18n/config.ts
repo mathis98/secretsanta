@@ -3,10 +3,12 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { en } from './en';
 import { fr } from './fr';
+import { de } from './de';
 
-export type Translations = typeof en;
+export type Translations = typeof de;
 
 const resources = {
+  de: { translation: de },
   en: { translation: en },
   fr: { translation: fr }
 } satisfies Record<string, { translation: Translations }>;
@@ -18,7 +20,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en',
+    fallbackLng: 'de',
     interpolation: {
       escapeValue: false
     }
@@ -27,7 +29,7 @@ i18n
 // Type augmentation for useTranslation hook
 declare module 'i18next' {
   interface CustomTypeOptions {
-    resources: typeof resources['en'];
+    resources: typeof resources['de'];
   }
 }
 
